@@ -1,0 +1,27 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack src/app.js -o public/bundle.js",
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marville001/github-actions-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marville001/github-actions-2/issues"
+  },
+  "homepage": "https://github.com/marville001/github-actions-2#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
